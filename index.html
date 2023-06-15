@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Upload and Download test</title>
+</head>
+<body>
+	<h1>File Upload</h1>
+	<form action="file.php" method="post" enctype="multipart/form-data">
+		Select file to upload:
+		<input type="file" name="fileToUpload" id="fileToUpload">
+		<input type="submit" value="Upload File" name="submit">
+	</form>
+	
+	<h1>Download Public Key</h1>
+	<a download="downloadable.txt" href="downloadable.txt">Download Public Key</a>
+</body>
+</html>
