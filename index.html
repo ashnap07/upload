@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>File Upload and Download test</title>
+  <title>Upload your files</title>
+  <link rel="stylesheet" type="text/css" href="primary.css">
 </head>
 <body>
-	<h1>File Upload</h1>
-	<form action="file.php" method="post" enctype="multipart/form-data">
-		Select file to upload:
-		<input type="file" name="fileToUpload" id="fileToUpload">
-		<input type="submit" value="Upload File" name="submit">
-	</form>
-	
-	<h1>Download Public Key</h1>
-	<a download="downloadable.txt" href="downloadable.txt">Download Public Key</a>
+  <h1>Download Our key! and Upload your files...</h1>
+  <br><br><br>
+  <form action="file.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="fileToUpload"><h3>Select file to upload:</h3></label>
+      <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+    </div>
+    <input type="submit" value="Upload File" name="submit" class="btn btn-primary">
+  </form>
+
+  <br><br><br>
+
+  <h1>Download Public Key</h1>
+  <a  href="downloadable.txt" download="downloadable.txt">Download Public Key</a>
 </body>
 </html>
