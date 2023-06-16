@@ -5,19 +5,27 @@
   <link rel="stylesheet" type="text/css" href="primary.css">
 </head>
 <body>
-  <h1>Download Our key! and Upload your files...</h1>
+    <h1>Download Our key! and Upload your files...</h1>
+    <h2>Download Our Public Key</h2>
+  <a  href="downloadable.txt" download="downloadable.txt">Download Public Key</a>
   <br><br><br>
+  <h2>Upload your shared secret key, and your encrypted file</h2>
   <form action="file.php" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="fileToUpload"><h3>Select file to upload:</h3></label>
+      <label for="fileToUpload"><h3>Upload your encrypted shared secret key:</h3></label>
       <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
     </div>
     <input type="submit" value="Upload File" name="submit" class="btn btn-primary">
   </form>
 
   <br><br><br>
+  <form action="keyfile.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="fileToUpload"><h3>Select and upload your encrypted file:</h3></label>
+      <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+    </div>
+    <input type="submit" value="Upload File" name="submit" class="btn btn-primary">
+  </form>
 
-  <h1>Download Public Key</h1>
-  <a  href="downloadable.txt" download="downloadable.txt">Download Public Key</a>
 </body>
 </html>
